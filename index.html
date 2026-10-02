@@ -125,8 +125,9 @@
       margin-bottom: 25px;
     }
 
-    /* Agency Badge */
+    /* Agency Badge (Clickable Link) */
     .agency-badge {
+      display: block;
       border: 1px solid rgba(255, 255, 255, 0.15);
       background-color: rgba(255, 255, 255, 0.02);
       border-radius: 12px;
@@ -134,6 +135,13 @@
       font-size: 12px;
       color: #a0aec0;
       margin-bottom: 20px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .agency-badge:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-color: rgba(0, 162, 255, 0.4);
     }
 
     .agency-badge span {
@@ -210,10 +218,10 @@
       नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
     </p>
 
-    <!-- Agency Credit -->
-    <div class="agency-badge">
+    <!-- Agency Credit (Clickable Link to Telegram Channel) -->
+    <a href="https://t.me/+Q8rICW-qP4RmMTJl" class="agency-badge" target="_blank">
       This Channel Advertise By <span>AI ADS AGENCY</span>
-    </div>
+    </a>
 
     <!-- Footer Links -->
     <div class="footer-links">
@@ -226,6 +234,7 @@
     </div>
 
   </div>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
